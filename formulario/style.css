@@ -1,0 +1,57 @@
+
+body{
+    background-image: url(./img/fondoVG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    margin-right:50px;
+    margin-left: 200px;
+background-color:rgba(255, 255, 255, 0.521);
+width: 1000px;
+border-radius: 20px;
+display: flex;
+
+}
+.logoVG{
+    margin: 50px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-right: 100px;
+}
+.formulario h1{
+    font-size: 50px;
+    margin: 20px;
+}
+ul{
+    margin-top: 2px;
+    list-style: none;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+li{
+    font-size: 50px;
+}
+.dato{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+}
+.checkbox1 input{
+    border-radius: 5px;
+}
+.checkbox2{
+    margin-left: 40px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.boton{
+    border-radius: 6px;
+    background-color: red;
+    font-size: 20px;
+}
