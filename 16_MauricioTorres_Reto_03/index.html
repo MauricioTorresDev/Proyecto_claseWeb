@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="fondo">
+        <div class="Mundo Ecológico">
+             <h1>Mundo Ecológico</h1>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="producto1"> 
+            <img src="./img/polvo_cacao-removebg-preview (1).png" alt="">
+            <h3>POLVO DE CACAO AMAZONIA 200GR</h3>
+            <p>precio: S/16.90</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto2">
+            <img src="./img/aceitegirasol-removebg-preview.png" alt="">
+            <h3>Aceite de girasol bio Natursoy 1 litro</h3>
+            <p>precio:S/42.90</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto3">
+            <img src="./img/agua_coco-removebg-preview.png" alt="">
+            <h3>Agua de coco bio Isola Bio 500ml.</h3>
+            <p>precio:  S/15.90</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="formulario">
+        <h2>Formulario</h2>
+        <form action="">
+            <label for="nombres">Nombres y  Apellido</label>
+            <input type="text" id="nombres" name="nombres" pattern="[a-z A-Z]+" title="Ingrese solo letras y espacios" required>
+            <br><br>
+            <label for="correo">Corre electrónico:</label>
+            <input type="email" id="correo" name="correo"  title="Ingrese bien su correo electronico" required>
+            <br><br>
+            <label for="dni">DNI:</label>
+            <input type="dni" id="dni" placeholder="Introduzca su DNI"  name="dni" pattern="[0-9]{8}" title="El número de dni tiene que tener 8 digitos" required>
+            <br><br>    
+            <label for="datetime">Fecha Nacimiento:</label>
+            <input type="date" id="datetime" name="fecha" required>
+            <br><br>
+            <label for="codigopostal">Código Postal:</label>
+            <input type="text" id="codigopostal" placeholder="código postal" maxlength="5" required>
+            <br><br>
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" required></textarea>
+            <br><br>
+            <input type="submit" value="enviar">
+
+
+        </form>
+    </div>
+</body>
+</html>
