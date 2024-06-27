@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container-nav">
+             <div class="logo">
+                  <img src="/img/LOGO_M.png" height="150px"  alt="logo">
+                  <p>Sueños del Mar</p>
+             </div>
+             <nav class="menu">
+                  <div class="head">
+                       <div class="logo"><img src="/img/logo.png" alt="logo"></div>
+                       <button type="button" class="close-menu-btn"></button>
+                  </div>
+                  <ul>
+                       <li><a href="/">Inicio</a></li>
+                       <li class="dropdown">
+                            <a href="/nosotros">Formulario</a>
+                       </li>
+                       <li><a href="">Hospedajes</a></li>
+                       <li><a href="">Eventos</a></li>
+                        <li><a href="">Registrate</a></li>
+                  </ul>
+             </nav>
+             <div class="header-right">
+                  <button type="button" class="search-btn icon-btn" id="dark-mode-toggle"><i
+                            class="fa-solid fa-moon"></i></button>
+                  <button type="button" class="open-menu-btn">
+                       <span class="line line-1"></span>
+                       <span class="line line-2"></span>
+                       <span class="line line-3"></span>
+                  </button>
+             </div>
+        </div>
+   </header>
+   <div class="imagen">
+<img src="/IMG/hotel.png" width="1423" height="800px" alt="">
+   </div>
+   <div class="fondo"></div>
+   <div class="container">
+    <form id="miFormulario" action="/guardar" method="post">
+         <h2>Formulario </h2>
+         <label for="nombres">Nombres Completo</label>
+         <input type="text" id="nombres" name="nombres" pattern="[a-z A-Z]+" title="Ingrese solo letras"
+              placeholder="Ingrese sus nombres" required>
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" title="Ingrese bien su correo electronico"
+              placeholder="Ingrese su correo " required>
+        
+        <label for="asunto">Fecha de llegada:</label>
+        <input type="date" id="fecha_llegada" name="fecha_llegada" 
+         required>
+            
+        <label for="asunto">Fecha de salida:</label>
+        <input type="date" id="fecha_salida" name="fecha_llegada" ,
+         required>
+
+         <label for="asunto">Tipo de Habitación:</label>
+         <select name="" id="">
+            <option value="">Individual</option>
+            <option value="">Doble</option>
+            <option value="">Suite</option>
+         </select>
+
+         <label for="asunto">Preferencias de cama:</label>
+         <div class="radio_form">
+            <input type="radio" id="large" name="size">
+            <label for="">Una cama grande</label>
+         </div>
+         <div class="radio_form">
+            <input type="radio" id="large" name="size">
+            <label for="">Dos camas pequeñas</label>
+         </div>
+         
+
+         <label for="mensaje">Opinion:</label>
+         <textarea id="mensaje" name="mensaje" rows="4" maxlength="100" placeholder="Escribe tu mensaje"
+              required></textarea>
+
+         <button id="btn_guardar" type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+</html>
